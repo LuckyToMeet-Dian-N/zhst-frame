@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: zhst-service-mq
+  rabbitmq:
+      host:
+      port: 5672
+      username: ccj
+      password: ccj
+      virtual-host: /
+      listener:
+        type: simple
+        simple:
+          concurrency: 10
+          max-concurrency: 10
+          retry:
+            max-attempts: 3
+            enabled: true
+            initial-interval: 2000
+          default-requeue-rejected: false
+server:
+  port: 8788
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zhst:
+  mqtt:
+    host:
+    qos: 0
+    hasSSL: false
+    port: 1883
+#    userName:
+#    password:
+    tcp: tcp://
+    ssl: ssl://
+    timeout: 10
+    keepAlive: 20
+    retained: false
+    clientPrefix: 
+    topics: 

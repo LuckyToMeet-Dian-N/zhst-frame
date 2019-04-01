@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.ProductStatisticsMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.ProductStatistics">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ps_id" jdbcType="INTEGER" property="psId" />
+    <result column="ps_product_id" jdbcType="INTEGER" property="psProductId" />
+    <result column="ps_year" jdbcType="INTEGER" property="psYear" />
+    <result column="ps_month" jdbcType="TINYINT" property="psMonth" />
+    <result column="ps_amount" jdbcType="INTEGER" property="psAmount" />
+    <result column="ps_cancel" jdbcType="INTEGER" property="psCancel" />
+    <result column="ps_overy" jdbcType="INTEGER" property="psOvery" />
+    <result column="ps_create_time" jdbcType="TIMESTAMP" property="psCreateTime" />
+    <result column="ps_update_time" jdbcType="TIMESTAMP" property="psUpdateTime" />
+  </resultMap>
+</mapper>

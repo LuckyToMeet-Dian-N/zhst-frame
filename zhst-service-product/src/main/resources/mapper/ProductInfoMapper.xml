@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.ProductInfoMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.ProductInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="pi_id" jdbcType="INTEGER" property="piId" />
+    <result column="pi_category_id" jdbcType="INTEGER" property="piCategoryId" />
+    <result column="pi_store_id" jdbcType="INTEGER" property="piStoreId" />
+    <result column="pi_code" jdbcType="CHAR" property="piCode" />
+    <result column="pi_name" jdbcType="VARCHAR" property="piName" />
+    <result column="pi_status" jdbcType="INTEGER" property="piStatus" />
+    <result column="pi_buy_status" jdbcType="INTEGER" property="piBuyStatus" />
+    <result column="pi_hot_sale" jdbcType="INTEGER" property="piHotSale" />
+    <result column="pi_pic" jdbcType="VARCHAR" property="piPic" />
+    <result column="pi_describe" jdbcType="VARCHAR" property="piDescribe" />
+    <result column="pi_deleted" jdbcType="TINYINT" property="piDeleted" />
+    <result column="pi_create_time" jdbcType="TIMESTAMP" property="piCreateTime" />
+    <result column="pi_update_time" jdbcType="TIMESTAMP" property="piUpdateTime" />
+  </resultMap>
+</mapper>

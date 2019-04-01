@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.ProductCategoryMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.ProductCategory">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="pct_id" jdbcType="INTEGER" property="pctId" />
+    <result column="pct_canteen_id" jdbcType="INTEGER" property="pctCanteenId" />
+    <result column="pct_name" jdbcType="VARCHAR" property="pctName" />
+    <result column="pct_status" jdbcType="INTEGER" property="pctStatus" />
+    <result column="pct_url" jdbcType="VARCHAR" property="pctUrl" />
+    <result column="pct_describe" jdbcType="VARCHAR" property="pctDescribe" />
+    <result column="pct_deleted" jdbcType="TINYINT" property="pctDeleted" />
+    <result column="pct_create_time" jdbcType="TIMESTAMP" property="pctCreateTime" />
+    <result column="pct_update_time" jdbcType="TIMESTAMP" property="pctUpdateTime" />
+  </resultMap>
+</mapper>

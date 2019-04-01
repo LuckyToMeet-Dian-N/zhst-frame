@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.ProductSpecificationsMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.ProductSpecifications">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ps_id" jdbcType="INTEGER" property="psId" />
+    <result column="ps_product_id" jdbcType="INTEGER" property="psProductId" />
+    <result column="ps_name" jdbcType="VARCHAR" property="psName" />
+    <result column="ps_unit" jdbcType="VARCHAR" property="psUnit" />
+    <result column="ps_stock" jdbcType="INTEGER" property="psStock" />
+    <result column="ps_price" jdbcType="DECIMAL" property="psPrice" />
+    <result column="ps_lunch_box_free" jdbcType="DECIMAL" property="psLunchBoxFree" />
+    <result column="ps_create_time" jdbcType="TIMESTAMP" property="psCreateTime" />
+    <result column="ps_update_time" jdbcType="TIMESTAMP" property="psUpdateTime" />
+    <result column="ps_deleted" jdbcType="TINYINT" property="psDeleted" />
+    <result column="ps_describe" jdbcType="LONGVARCHAR" property="psDescribe" />
+  </resultMap>
+</mapper>
